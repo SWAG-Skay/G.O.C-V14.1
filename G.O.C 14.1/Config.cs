@@ -15,6 +15,10 @@ namespace GOC
         public bool IsEnabled { get; set; } = true;
         [Description("Is it included Debug?")]
         public bool Debug { get; set; } = false;
+        [Description("Exiled Verson")]
+        public override Version RequiredExiledVersion => new Version(9, 6, 0);
+         [Description("Plugin Version")]
+         public override Version Version => new Version(1, 0, 0);
         [Description("Chance for spawn in %")]
         public int Chance { get; set; } = 15;
         [Description("Items for squad")]
